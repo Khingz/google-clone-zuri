@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem 1.4rem 1rem;
+}
+
+nav div {
+    margin-left: 1rem;
+}
+
+div.gmail-link a, div.gmail-image a {
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+    font-size: .85rem;
+}
+
+div.gmail-link a:hover, div.gmail-image a:hover, footer .footer-extra .footer-extra-right ul li a:hover, footer .footer-extra .footer-extra-left ul li a:hover,  main .language-options a:hover{
+    text-decoration: underline;
+}
+
+div.gmail-account a img {
+   border-radius: 50%;
+}
+
+main {
+    text-align: center;
+}
+
+main form {
+    margin-top: 1.7rem;
+    position: relative;
+}
+
+main i {
+    color: rgb(204, 201, 201);
+    position: absolute;
+    margin: .8rem;
+}
+
+main form input {
+    width: 40%;
+    height: 2.7rem;
+    border-radius: 20px 20px 20px 20px;
+    outline: none;
+    border: solid 1px rgb(204, 201, 201);
+    padding: 0 1.5rem 0 2.3rem;
+
+}
+
+main form input:hover {
+    box-shadow: 1px 1px 3px 1px rgb(216, 212, 212);
+}
+
+main .google-buttons {
+    margin-top: 1.8rem;
+}
+
+button {
+    border: none;
+    padding: .5rem 1.1rem;
+    margin: 0 .5rem;
+}
+
+button:hover {
+    border: solid 1px rgb(228, 223, 223);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+main .language-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+main .language-options p, main .language-options a {
+    margin-right: .4rem;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+main .language-options a {
+    color: rgb(44, 44, 196);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: rgb(240, 240, 240);
+}
+
+footer .google-location {
+    padding: 1rem 0;
+}
+
+footer .google-location p {
+    color: rgb(136, 133, 133);
+    font-size: .9rem;
+}
+
+.underline {
+    border-bottom: 1px rgb(211, 209, 209) solid;
+    margin-left: -2rem !important;
+    padding: 0 !important;
+    width: 100vw;
+}
+
+footer .footer-extra {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+footer .footer-extra .footer-extra-right ul, footer .footer-extra .footer-extra-left ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+footer .footer-extra .footer-extra-right ul li a, footer .footer-extra .footer-extra-left ul li a{
+    text-decoration: none;
+    color: rgb(136, 133, 133);
+    margin-right: 1rem;
+    font-size: .9rem;
+}
+
+/* media query */
+@media screen and (max-width: 1000px) {
+    main img {
+        margin-top: 1.5rem;
+    }
+
+    main form input {
+        width: 60%;
+    }
+
+    div.gmail-link a:hover, div.gmail-image a:hover, footer .footer-extra .footer-extra-right ul li a:hover, footer .footer-extra .footer-extra-left ul li a:hover,  main .language-options a:hover{
+        text-decoration: underline;
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    footer .footer-extra {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-extra .footer-extra-right {
+        justify-content: center;
+        margin-bottom: .9rem;
+        text-align: center;
+    }
+}
